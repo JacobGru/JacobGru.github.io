@@ -2,7 +2,7 @@
 /* 9/17/25 */
 
 /* css reset */
-body, header, nav, main, footer, h1, div, img{
+body, header, nav, main, footer, h1, div, img, ul{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -19,48 +19,62 @@ img{
 	height: 450px;
 }
 
+/*style rules for mobile viewpoint*/
+
 /* style for header */
 header{
-	width: 25%;
-	float: left;
 	color: white;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	height: 190px;
 }
 
 /* style for nav */
 nav{
-	width: 70%;
-	float: right;
 	margin: 5em 3em 0 0;
+	padding: 1%;
+	margin-bottom: 1%;
 }
 
 
 nav ul{
 	list-style-type: none;
-	margin: 0;
-	text-align: right;
+	text-align: center;
 }
 
 nav li{
-	display: inline-block;
 	font-size: 1.5em;
-	font-family: Verdana, Arial, san-serif;
+	font-family: 'BBH Sans Hegarty', san-serif;
+	border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+	border-top: none;
 }
 
 nav li a{
 	display: block;
 	color: #fff;
-	text-align: center;
 	padding: .5em 1em;
 	text-decoration: none;
 }
 
+.mobile {
+	display: block;
+}
+
 /* styles for main and divs*/
 main{
-	clear: left;
 	background-color: #000;
-	padding: 2%;
-	font-size: 1.25em;
+	padding: 3%;
+	font-size: 1.15em;
 	color: white;
+	font-family: 'Alan Sans', serif;
+}
+
+.round {
+	border-radius: 8px;
 }
 
 .action{
@@ -91,5 +105,9 @@ footer p a{
 	color: #fff;
 	text-decoration: none;
 }
+
+
+
+
 
 
