@@ -106,6 +106,62 @@ footer p a{
 	text-decoration: none;
 }
 
+/* Media Query for Tablet Viewpoint */
+@media screen and (min-width: 630px) {
+	.mobile {
+		display: none;
+	}
+
+	.tablet-desktop {
+		display: block;
+	}
+
+	/* Tablet Viewpoint: Style rule for header */
+	header {
+		position: static;
+		
+	}
+
+	/* Tablet Viewpoint: Style rule for nav */
+	nav li {
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+	}
+
+	nav li:last-child {
+		border-right: none;
+	}
+
+	nav li a {
+		padding: 0.1em 0.75em;
+	}
+
+	/* Tablet Viewpoint: Style rule for main */
+	main  {
+		margin: 0 0 4% 10%;
+	}
+}	
+
+/* Media Query for Desktop Viewpoint */
+@media screen and (min-width:769) {
+	header {
+		width: 25%;
+		float: left;
+		padding-bottom: 0;
+	}
+
+	nav {
+		text-align: right;
+	}
+
+	main {
+		clear: left;
+	}
+}
+
+
+
 
 
 
