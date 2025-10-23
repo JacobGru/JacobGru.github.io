@@ -3,161 +3,242 @@
 
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-/* Style for body and images */
+/* Body & fonts */
 body {
-	background-color: #000;
+  background-color: #000;
+  font-family: 'Alan Sans', sans-serif;
+  color: #fff;
+  line-height: 1.5;
 }
 
+/* Images */
 img {
-	max-width: 100%;
-	display: block;
-	height: 450px; /* Consider using height: auto; for responsiveness */
+  max-width: 100%;
+  height: auto; /* Responsive height */
+  display: block;
+  border-radius: 8px; /* subtle rounding */
+  transition: transform 0.3s ease;
 }
 
-/* Style rules for mobile viewpoint (default) */
+img:hover,
+img:focus {
+  transform: scale(1.05);
+  outline: none;
+}
 
 /* Header */
 header {
-	color: white;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	height: 190px;
+  color: white;
+  position: sticky;
+  top: 0;
+  background-color: #111; /* Add background to stick better */
+  padding: 1.5em 1em;
+  height: 190px;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
 /* Navigation */
 nav {
-	margin: 5em 3em 0 0;
-	padding: 1%;
-	margin-bottom: 1%;
+  margin: 5em 3em 1em 0;
+  padding: 1%;
 }
 
 nav ul {
-	list-style-type: none;
-	text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
 
 nav li {
-	font-size: 1.5em;
-	font-family: 'BBH Sans Hegarty', sans-serif; /* Fixed typo */
-	border-top: 1px solid #fff;
+  font-size: 1.5em;
+  font-family: 'BBH Sans Hegarty', sans-serif;
+  border-top: 1px solid #fff;
+  color: #fff;
+  transition: background-color 0.3s ease;
 }
 
 nav li:first-child {
-	border-top: none;
+  border-top: none;
 }
 
 nav li a {
-	display: block;
-	color: #fff;
-	padding: 0.5em 1em;
-	text-decoration: none;
+  display: block;
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Mobile-specific display */
-.mobile {
-	display: block;
+nav li a:hover,
+nav li a:focus {
+  background-color: #660;
+  color: #fff;
+  outline: none;
 }
 
-/* Main content and reusable classes */
+/* Main content */
 main {
-	background-color: #000;
-	padding: 3%;
-	font-size: 1.15em;
-	color: white;
-	font-family: 'Alan Sans', serif;
+  background-color: #000;
+  padding: 3%;
+  font-size: 1.15em;
+  font-family: 'Alan Sans', sans-serif;
 }
 
-.round {
-	border-radius: 8px;
+/* Project links list */
+main ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1em;
 }
 
-.action {
-	font-size: 1.35em;
-	color: #660;
-	font-weight: bold;
+main ul li {
+  margin-bottom: 0.75em;
 }
 
-.external-link {
-	color: #660;
-	font-weight: bold;
-	text-decoration: none;
+main ul li a {
+  color: #660;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.map {
-	border: 8px solid #000;
+main ul li a:hover,
+main ul li a:focus {
+  color: #cc4400;
+  text-decoration: underline;
+  outline: none;
 }
 
 /* Footer */
 footer p {
-	font-size: 0.75em;
-	text-align: center;
-	color: #fff;
-	padding: 0 1em;
+  font-size: 2.5em;
+  text-align: center;
+  color: #fff;
+  padding: 0 1em 1em 1em;
+  float: left;
 }
 
-footer p a {
-	color: #fff;
-	text-decoration: none;
+/* Utility Classes */
+.round {
+  border-radius: 8px;
 }
 
-/* Media Query for Tablet Viewpoint */
+.action {
+  font-size: 1.35em;
+  color: #660;
+  font-weight: bold;
+}
+
+.external-link {
+  color: #660;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.map {
+  border: 8px solid #000;
+}
+
+/* Figure with caption and shadow */
+.project-figure {
+  margin: 2em auto;
+  text-align: center;
+  background-color: #111;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  max-width: 850px;
+}
+
+.project-figure figcaption {
+  color: #aaa;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+/* Grid Gallery */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5em;
+  margin: 3em 0;
+}
+
+.grid-item {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Media Queries */
+
+/* Tablet */
 @media screen and (min-width: 630px) {
-	.mobile {
-		display: none;
-	}
+  .mobile {
+    display: none;
+  }
 
-	.tablet-desktop {
-		display: block;
-	}
+  .tablet-desktop {
+    display: block;
+  }
 
-	/* Tablet: Header */
-	header {
-		position: static;
-	}
+  header {
+    position: static;
+    padding: 2em 1em;
+  }
 
-	/* Tablet: Navigation */
-	nav li {
-		border-top: none;
-		display: inline-block;
-		border-right: 1px solid #fff;
-	}
+  nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1px solid #fff;
+  }
 
-	nav li:last-child {
-		border-right: none;
-	}
+  nav li:last-child {
+    border-right: none;
+  }
 
-	nav li a {
-		padding: 0.1em 0.75em;
-	}
+  nav li a {
+    padding: 0.25em 0.75em;
+  }
 
-	/* Tablet: Main */
-	main {
-		margin: 0 0 4% 10%;
-	}
+  main {
+    margin: 0 0 4% 10%;
+  }
 }
 
-/* Media Query for Desktop Viewpoint */
+/* Desktop */
 @media screen and (min-width: 769px) {
-	header {
-		width: 25%;
-		float: left;
-		padding-bottom: 0;
-	}
+  header {
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+  }
 
-	nav {
-		text-align: right;
-	}
+  nav {
+    text-align: right;
+  }
 
-	main {
-		clear: left;
-	}
+  main {
+    clear: left;
+  }
 }
+
 
 
 
