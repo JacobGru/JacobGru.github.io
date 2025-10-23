@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Jacob's Portfolio</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<header>
-			<h1>Welcome To My Portfolio</h1>
-			<h2>By: Jacob Gruszewski</h2>
-		</header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Me</a></li> 
-				<li><a href="projects.html">ClassWork</a></li> 
-				<li>Certification</li> 
-				<li>Contact Us</li>
-			</ul>
-		</nav>
-		<main> 
-			<div class="mobile tablet-desktop">
-			<p>Welcome to my portfolio. This is used for all my classwork.</p> 
-			
-			<p>I am in CVCC for programming. I am taking this class because i want to be a video game developer.</p>
-			
-			<p>We learn java or javascript our junior year. Our Senior year we learn html to learn how to make websites.</p>
-			</div>
-		</main>
-		<footer>
-		</footer>
-	</body>
+<head>
+    <title>Jacob's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300;400;700&family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome To My Portfolio</h1>
+        <h2>By: Jacob Gruszewski</h2>
+    </header>
+
+    <nav aria-label="Primary navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li> 
+            <li><a href="projects.html">ClassWork</a></li> 
+            <li><a href="certification.html">Certification</a></li> 
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro-section">
+            <p>Welcome to my portfolio. This is used for all my classwork.</p> 
+            <p>I am in CVCC for programming. I am taking this class because I want to be a video game developer.</p>
+            <p>We learn Java or JavaScript in our junior year. Our senior year we learn HTML to build websites.</p>
+        </section>
+
+        <!-- Figure with shadow and figcaption -->
+        <figure class="project-figure">
+            <img src="https://miro.medium.com/v2/1*OohqW5DGh9CQS4hLY5FXzA.png" alt="Hello World Picture" width="800">
+            <figcaption>Hello World: The traditional start for programmers.</figcaption>
+        </figure>
+
+        <!-- Example Grid Section -->
+        <section class="grid-gallery">
+            <div class="grid-item">Java</div>
+            <div class="grid-item">JavaScript</div>
+            <div class="grid-item">HTML</div>
+            <div class="grid-item">CSS</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jacob Gruszewski. All rights reserved.</p>
+    </footer>
+</body>
 </html>
+
