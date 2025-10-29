@@ -145,6 +145,38 @@ footer p {
   border: 8px solid #000;
 }
 
+#form {
+  margin-top: 2%;
+  padding: 15%;
+}
+
+#form h2 {
+  text-align: center;
+}
+
+fieldset, input, select, textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 3%;
+}
+
+form #submit {
+  margin: 0 auto;
+  border: none;
+  display: block;
+  padding: 2%;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
 /* Figure with caption and shadow */
 .project-figure {
   margin: 2em auto;
@@ -220,6 +252,31 @@ footer p {
   main {
     margin: 0 0 4% 10%;
   }
+
+  table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th, td {
+    border: 1px solid white;
+    padding: 2%;
+  }
+
+  th {
+    background-color: white;
+    color: black;
+    font-size: 1.15em;
+  }
+
 }
 
 /* Desktop */
@@ -238,6 +295,7 @@ footer p {
     clear: left;
   }
 }
+
 
 
 
