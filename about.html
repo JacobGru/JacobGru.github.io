@@ -14,13 +14,30 @@
         <h1>Welcome To My Portfolio</h1>
         <h2>By: Jacob Gruszewski</h2>
     </header>
-    <nav>
+
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a> 
+            <a href="projects.html">ClassWork</a>
+            <a href="hobby.html">Hobby</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="certification.html">Certification</a> 
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+
+    </nav>
+
+    <nav class="tablet-desktop">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li> 
-            <li><a href="projects.html">ClassWork</a></li> 
-			<li><a href="hobby.html">Hobby</a></li> 
-			<li><a href="favorites.html">Favorites</a></li>
+            <li><a href="projects.html">ClassWork</a></li>
+            <li><a href="hobby.html">Hobby</a></li> 
+            <li><a href="favorites.html">Favorites</a></li>
             <li><a href="certification.html">Certification</a></li> 
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -41,7 +58,8 @@
 
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.3204415600876!2d-81.51319792356358!3d41.30189210129339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88311fe40878adbb%3A0x374c34858babe833!2sNordonia%20High%20School!5e0!3m2!1sen!2sus!4v1761152568915!5m2!1sen!2sus"
 				width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		 <div class="mobile">
+
+        <div class="mobile">
             <h3>Planet Fitness Workout</h3>
             <p>Arms: MW 4pm & 6pm</p>
             <p>Legs: TUE 4pm & 6pm</p>
@@ -101,8 +119,10 @@
     <footer>
         <p>&copy; Copyright 2025. All Rights Reserved.</p> 
     </footer>
+    <script src="css/script.js"></script>
 </body>
 </html>
+
 
 
 
