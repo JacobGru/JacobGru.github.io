@@ -14,11 +14,28 @@
     <h1>Welcome To My Portfolio</h1>
     <h2>By: Jacob Gruszewski</h2>
   </header>
-  <nav>
+
+<nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a> 
+            <a href="projects.html">ClassWork</a>
+            <a href="hobby.html">Hobby</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="certification.html">Certification</a> 
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+
+    </nav>
+
+  <nav class="tablet-desktop">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Me</a></li> 
-      <li><a href="projects.html">ClassWork</a></li> 
+      <li><a href="projects.html">ClassWork</a></li>
       <li><a href="hobby.html">Hobby</a></li> 
       <li><a href="favorites.html">Favorites</a></li>
       <li><a href="certification.html">Certification</a></li> 
@@ -52,8 +69,10 @@
   <footer>
     <p>&copy; Copyright 2025. All Rights Reserved.</p> 
   </footer> 
+  <script src="css/script.js"></script>
 </body>
 </html>
+
 
 
 
