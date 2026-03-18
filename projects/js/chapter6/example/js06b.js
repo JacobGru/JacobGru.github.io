@@ -42,7 +42,7 @@ function validateNumber() {
       cNum.setCustomValidity("Please enter a credit card number.");
    } else if (cNum.validity.patternMismatch) {
       cNum.setCustomValidity("Please enter a valid credit card number.");
-   } else if (!luhn(cNum.value) === false) {
+   } else if (luhn(cNum.value) === false) {
       cNum.setCustomValidity("Please enter a valid credit card number.");
    } else {
       cNum.setCustomValidity("");
